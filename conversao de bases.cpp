@@ -1,8 +1,3 @@
-/*
-Nome:Willian Cesar Cecilio da Silva RA:00097419
-Nome:Kaique Lisboa da Rosa  RA:00094922
-Nome:Erick Dias de Moraes   RA:00097971                                 
-*/
 #include<stdlib.h>
 #include<stdio.h>
 #include<math.h>
@@ -21,12 +16,12 @@ int main(int argc,char *argv[])
 	setlocale (LC_ALL,"Portuguese");
 	int vEscolha;
 	while(true){
-		printf("menu\n1 - conversão Binario > Decimal.\n2 - conversão Decimal > Binario.\n3 - conversão Octal > Decimal.\n4 - conversão Decimal > Octal.\n5 - conversão Hexadecimal > Decimal\n6 - conversão Decimal > Hexadecimal\n7 - sair\n\nOpcao: ");
+		printf("menu\n1 - conversÃ£o Binario > Decimal.\n2 - conversÃ£o Decimal > Binario.\n3 - conversÃ£o Octal > Decimal.\n4 - conversÃ£o Decimal > Octal.\n5 - conversÃ£o Hexadecimal > Decimal\n6 - conversÃ£o Decimal > Hexadecimal\n7 - sair\n\nOpcao: ");
 		scanf("%d", &vEscolha);
 		switch(vEscolha){
 			    case 1:
 			    	    int bin, dec = 0, i;
-                        printf("Digite um número bínario para ser convertido: ");
+                        printf("Digite um nÃºmero bÃ­nario para ser convertido: ");
                         scanf("%d", &bin);
                         for(i = 0; bin > 0; i++)
                         {
@@ -41,7 +36,7 @@ int main(int argc,char *argv[])
 				        int num;
                         int bin[8];
                         int aux;
-                        printf("Digite um número decímal para ser convertido: ");
+                        printf("Digite um nÃºmero decÃ­mal para ser convertido: ");
                         scanf("%d", &num);
                         for (aux = 7; aux >= 0; aux--)
                         {
@@ -62,7 +57,7 @@ int main(int argc,char *argv[])
         switch(vEscolha){
         	    case 3:
         	            int OctalNumero;
-        	            printf("Insira um número em Octal: ");
+        	            printf("Insira um nÃºmero em Octal: ");
                         scanf("%d", &OctalNumero);
                         printf("%d Em octal = %lld em Decimal \n\n", OctalNumero, ConverterOctalParaDecimal(OctalNumero));
                         system ("Pause");
@@ -74,7 +69,7 @@ int main(int argc,char *argv[])
                         printf("Digite um numero decimal:");
                         scanf("%d",&n);
                         octal=decim(n);
-                        printf("O equivalente em octal é: %d\n\n",octal);
+                        printf("O equivalente em octal Ã©: %d\n\n",octal);
                         system ("Pause");
                         }
 		                }
@@ -86,7 +81,7 @@ int main(int argc,char *argv[])
                         int i = 0, val, len;
                         decimal = 0;
                         place = 1;
-                        printf("Insira um número em Hexadecimal: ");
+                        printf("Insira um nÃºmero em Hexadecimal: ");
                         cin >> hex;
                         len = strlen(hex);
                         len--;
@@ -107,8 +102,8 @@ int main(int argc,char *argv[])
                         decimal += val * pow(16, len);
                         len--;
                         }
-                        printf("Número Hexadecimal = %s\n", hex);
-                        printf("Número Decimal = %lld \n\n", decimal);
+                        printf("NÃºmero Hexadecimal = %s\n", hex);
+                        printf("NÃºmero Decimal = %lld \n\n", decimal);
                         system ("Pause");			    	
 		                }                
         switch(vEscolha){
